@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+agents-100k.zip
+.vscode/
+
 # C extensions
 *.so
 
