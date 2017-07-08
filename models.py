@@ -19,6 +19,7 @@ def read_json(source):
     return data
 
 def main():
+    #a loop to set attributes from list of 100k agents
     for agent_attributes in read_json('agents-100k.json'):
         agent = Agent(agent_attributes)
         print(agent.age)
