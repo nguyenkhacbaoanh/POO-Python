@@ -2,7 +2,7 @@ import json
 
 class Agent:
 
-    def __init__(self, agent_attrs):
+    def __init__(self, **agent_attrs):
         # a loop to set all attributes from JSON to class
         for attr_name, attr_value in agent_attrs.items():
             # set attribute
@@ -21,7 +21,7 @@ def read_json(source):
 def main():
     #a loop to set attributes from list of 100k agents
     for agent_attributes in read_json('agents-100k.json'):
-        agent = Agent(agent_attributes)
+        agent = Agent(**agent_attributes)
         print(agent.age)
 
 main()
